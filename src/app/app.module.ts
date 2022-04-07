@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CountdownPipe } from './countdown.pipe';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CountdownPipe
   ],
   imports: [
     BrowserModule,
