@@ -1,0 +1,29 @@
+{
+  "name": "brollop",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm:watch-sass\" \"npm:serve\"",
+    "build-sass": "sass style.scss:style.css --no-source-map",
+    "watch-sass": "sass style.scss:style.css --no-source-map --watch",
+    "serve": "browser-sync start --server --files \"index.html,style.css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhallbe/brollop.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/anhallbe/brollop/issues"
+  },
+  "homepage": "https://github.com/anhallbe/brollop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "bulma": "^0.9.3",
+    "concurrently": "^7.1.0",
+    "sass": "^1.50.0"
+  }
+}

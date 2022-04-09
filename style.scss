@@ -1,0 +1,12 @@
+@use './node_modules/bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+header.hero {
+    background-image: url("assets/välkommen.jpeg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.stylish {
+    font-family: 'Dancing Script', cursive;
+}
