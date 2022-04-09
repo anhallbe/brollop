@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "sourceMap": false,
+        "declaration": false,
+        "target": "es2018",
+        "module": "es2015",
+        "lib": [
+            "esnext",
+            "dom"
+        ]
+    },
+    "files": [
+        "script.ts"
+    ]
+}

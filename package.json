@@ -4,10 +4,12 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm:watch-sass\" \"npm:serve\"",
+    "start": "concurrently \"npm:watch-sass\" \"npm:watch-ts\" \"npm:serve\"",
     "build-sass": "sass style.scss:style.css --no-source-map",
     "watch-sass": "sass style.scss:style.css --no-source-map --watch",
-    "serve": "browser-sync start --server --files \"index.html,style.css\"",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "serve": "browser-sync start --server --files \"index.html,style.css,script.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
     "browser-sync": "^2.27.9",
     "bulma": "^0.9.3",
     "concurrently": "^7.1.0",
-    "sass": "^1.50.0"
+    "sass": "^1.50.0",
+    "typescript": "^4.6.3"
   }
 }

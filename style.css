@@ -10306,6 +10306,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header.hero {
   background-image: url("assets/välkommen.jpeg");
   background-size: cover;
@@ -10314,4 +10318,15 @@ header.hero {
 
 .stylish {
   font-family: "Dancing Script", cursive;
+}
+
+.fade-in {
+  transition: all 1s;
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+.active {
+  transform: translateX(0px);
+  opacity: 1;
 }
