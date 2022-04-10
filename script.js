@@ -4,10 +4,8 @@ const observer = new IntersectionObserver(entries => {
             entry.target.classList.add("active");
         }
         else {
-            if (entry.target.classList.contains("fade-out")) {
-                entry.target.classList.remove("active");
-            }
+            // entry.target.classList.remove("active");
         }
     }
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 document.querySelectorAll(".fade-in").forEach(element => observer.observe(element));

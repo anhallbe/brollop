@@ -11,17 +11,23 @@ header.hero {
     background-position: bottom;
 }
 
-.stylish {
+.fancy {
     font-family: 'Dancing Script', cursive;
 }
 
 .fade-in {
-    transition: all 1s;
-    transform: translateX(100px);
+    transition: all .5s ease-out;
+    transform: translateX(-100px);
     opacity: 0;
+
+    &.active {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
-.active {
-    transform: translateX(0px);
-    opacity: 1;
+figure.column img {
+    max-height: 500px;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
