@@ -31,3 +31,9 @@ figure.column img {
     aspect-ratio: 1;
     object-fit: cover;
 }
+
+figure.column iframe {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+}

@@ -6,18 +6,11 @@
       "type": "npm",
       "script": "start",
       "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "Available on"
-          }
-        }
+      "label": "npm: start",
+      "detail": "concurrently \"npm:watch-sass\" \"npm:watch-ts\" \"npm:serve\"",
+      "group": {
+        "kind": "build",
+        "isDefault": true
       }
     }
   ]
