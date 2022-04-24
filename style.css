@@ -10330,12 +10330,14 @@ header.hero {
   opacity: 1;
 }
 
+figure.column {
+  text-align: center;
+}
 figure.column img {
   max-height: 500px;
   aspect-ratio: 1;
   object-fit: cover;
 }
-
 figure.column iframe {
   width: 100%;
   max-width: 500px;
