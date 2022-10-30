@@ -108,7 +108,8 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "cname": "andreas-och-emma.se"
+            "cname": "andreas-och-emma.se",
+            "branch": "gh-pages"
           }
         }
       }
