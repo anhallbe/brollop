@@ -1,3 +1,6 @@
 {
-    "html.format.wrapLineLength": 180
+    "html.format.wrapLineLength": 180,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
