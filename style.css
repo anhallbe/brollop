@@ -59,3 +59,7 @@ ul li {
   transform: translateX(0px);
   opacity: 1;
 }
+
+address {
+  text-align: center;
+}
