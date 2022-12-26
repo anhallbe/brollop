@@ -8,3 +8,25 @@ const observer = new IntersectionObserver(entries => {
     }
 }, { threshold: 0.1 });
 document.querySelectorAll(".fade-in").forEach(element => observer.observe(element));
+
+
+function startGallery(gallery: HTMLElement) {
+    setInterval(showNext, 5000);
+
+    function showNext() {
+        const hasNext = gallery.scrollLeft + gallery.clientWidth !== gallery.scrollWidth;
+        if (hasNext) {
+            gallery.scrollBy({
+                behavior: "smooth",
+                left: gallery.clientWidth,
+            });
+        } else {
+            gallery.scrollTo({
+                behavior: "smooth",
+                left: 0,
+            })
+        }
+    }
+}
+
+startGallery(document.querySelector(".gallery"));

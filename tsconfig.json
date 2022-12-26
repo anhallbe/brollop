@@ -2,11 +2,12 @@
     "compilerOptions": {
         "sourceMap": false,
         "declaration": false,
-        "target": "es2018",
-        "module": "es2015",
+        "target": "ES2018",
+        "module": "ES2015",
+        "skipLibCheck": true,
         "lib": [
-            "esnext",
-            "dom"
+            "ESNext",
+            "DOM"
         ]
     },
     "files": [
