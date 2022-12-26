@@ -6,6 +6,10 @@
   font-family: "Linux Libertine Capitals";
   src: url("assets/fonts/LinLibertine/LinLibertine_aS.ttf");
 }
+@font-face {
+  font-family: "Linux Libertine Bold";
+  src: url("assets/fonts/LinLibertine/LinLibertine_RB.ttf");
+}
 * {
   box-sizing: border-box;
 }
@@ -39,6 +43,9 @@ body > section, body > img, body > figure, body > article {
 }
 body img {
   aspect-ratio: 4/3;
+}
+body img.icon {
+  aspect-ratio: 1/1;
 }
 
 iframe {
@@ -74,8 +81,28 @@ li :first-child,
   font-family: "Linux Libertine Capitals";
 }
 
+b,
+strong,
+.bold {
+  font-family: "Linux Libertine Bold";
+}
+
+ul {
+  font-family: "Linux Libertine Capitals";
+  --gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  justify-content: center;
+}
 ul li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+}
+ul li img {
+  width: 50px;
 }
 
 .fade-in {

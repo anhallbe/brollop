@@ -8,6 +8,11 @@
     src: url("assets/fonts/LinLibertine/LinLibertine_aS.ttf");
 }
 
+@font-face {
+    font-family: 'Linux Libertine Bold';
+    src: url("assets/fonts/LinLibertine/LinLibertine_RB.ttf");
+}
+
 * {
     box-sizing: border-box;
 }
@@ -47,6 +52,10 @@ body {
 
     img {
         aspect-ratio: 4 / 3;
+
+        &.icon {
+            aspect-ratio: 1 / 1;
+        }
     }
 }
 
@@ -85,8 +94,29 @@ li :first-child,
     font-family: 'Linux Libertine Capitals';
 }
 
-ul li {
-    list-style: none;
+b,
+strong,
+.bold {
+    font-family: 'Linux Libertine Bold';
+}
+
+ul {
+    font-family: 'Linux Libertine Capitals';
+    --gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+
+    li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: var(--gap);
+
+        img {
+            width: 50px;
+        }
+    }
 }
 
 .fade-in {
