@@ -110,6 +110,9 @@ address {
   display: flex;
   overflow: hidden;
 }
+.gallery picture {
+  display: contents;
+}
 .gallery img {
   width: 100%;
 }
