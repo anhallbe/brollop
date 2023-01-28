@@ -1,4 +1,4 @@
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries) => {
     for (const entry of entries) {
         if (entry.isIntersecting) {
             entry.target.classList.add("active");
@@ -8,7 +8,9 @@ const observer = new IntersectionObserver(entries => {
         }
     }
 }, { threshold: 0.1 });
-document.querySelectorAll(".fade-in").forEach(element => observer.observe(element));
+document
+    .querySelectorAll(".fade-in")
+    .forEach((element) => observer.observe(element));
 function startGallery(gallery) {
     setInterval(showNext, 5000);
     function showNext() {

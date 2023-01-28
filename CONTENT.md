@@ -11,8 +11,8 @@
 - Kontaktuppgifter oss
 - Bilder på folket (toast, tärnor, marschaller)
 
-
 # Schema
+
 - 14:00 Gäster är välkomna på mingel
 - 15:00 Vigsel ute på ängen
 - 15:30 Mingel och aktiviteter uppe vid logen

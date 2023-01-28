@@ -1,16 +1,11 @@
 {
-    "compilerOptions": {
-        "sourceMap": false,
-        "declaration": false,
-        "target": "ES2018",
-        "module": "ES2015",
-        "skipLibCheck": true,
-        "lib": [
-            "ESNext",
-            "DOM"
-        ]
-    },
-    "files": [
-        "script.ts"
-    ]
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": false,
+    "target": "ES2018",
+    "module": "ES2015",
+    "skipLibCheck": true,
+    "lib": ["ESNext", "DOM"]
+  },
+  "files": ["script.ts"]
 }

@@ -10,7 +10,7 @@
     "build-ts": "tsc",
     "watch-ts": "tsc -w",
     "serve": "browser-sync start --server --files \"index.html,style.css,script.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier -lw ."
   },
   "repository": {
     "type": "git",
