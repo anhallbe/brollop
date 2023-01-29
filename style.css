@@ -11,6 +11,18 @@
 img {
   object-fit: cover;
 }
+img.pull-right {
+  object-position: right;
+}
+img.pull-top {
+  object-position: top;
+}
+img.pull-bottom {
+  object-position: bottom;
+}
+img.pull-left {
+  object-position: left;
+}
 
 body {
   font-family: "Libertinus Serif", "Times New Roman", Times, serif;

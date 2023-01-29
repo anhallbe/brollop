@@ -16,6 +16,22 @@
 
 img {
   object-fit: cover;
+
+  &.pull-right {
+    object-position: right;
+  }
+
+  &.pull-top {
+    object-position: top;
+  }
+
+  &.pull-bottom {
+    object-position: bottom;
+  }
+
+  &.pull-left {
+    object-position: left;
+  }
 }
 
 body {
